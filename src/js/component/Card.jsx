@@ -14,9 +14,14 @@ function Card() {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </p>
-        <a href="#" className="btn btn-primary">
-          Find Out!
-        </a>
+        <div className="border-top p-0 m-0 col-12">
+          <a
+            href="#"
+            className="btn btn-primary d-flex justify-content-center col-6 mx-auto my-2 mt-3"
+          >
+            Find Out More!
+          </a>
+        </div>
       </div>
     </div>
   );
