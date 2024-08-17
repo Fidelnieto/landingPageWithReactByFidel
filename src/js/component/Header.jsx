@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+function Header(props) {
   return (
     <div className="p-0 m-0">
       <nav
@@ -9,22 +9,24 @@ function Header() {
       >
         <div className="container-fluid">
           <a className="navbar-brand text-light fs-3 ms-3 col-6" href="#">
-            Navbar
+            {props.navbarTitle}
           </a>
           <button
-            className="navbar-toggler bg-light px-2"
+            className="navbar-toggler px-2"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style={{ background: "gray" }}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="container-fluid collapse navbar-collapse bg-dark col-5"
+            className="container-fluid collapse navbar-collapse bg-dark "
             id="navbarNavAltMarkup"
+            style={{ width: "100%" }}
           >
             <div className="navbar-nav ms-auto">
               <a
