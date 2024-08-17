@@ -20,10 +20,13 @@ function Card(props) {
       <div className="card-body border">
         <h5 className="card-title">{props.cardTitle}</h5>
         <p className="card-text">{props.cardText}</p>
-        <div className="border-top p-0 m-0 col-12">
+        <div
+          className=" border-top col-12 my-auto mx-auto"
+          style={{ width: "100%" }}
+        >
           <a
             href={props.cardButtonUrl}
-            className="btn btn-primary d-flex my-auto col-6 mx-auto mt-3"
+            className="btn btn-primary d-flex my-auto col-8 col-lg-8 col-md-6 justify-content-center mx-auto mt-3"
           >
             {props.cardButtonLabel}
           </a>
