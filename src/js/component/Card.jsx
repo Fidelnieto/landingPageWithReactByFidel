@@ -7,15 +7,13 @@ function Card(props) {
         src={props.imgUrl}
         className="card-img-top"
         alt="..."
-        style={
-          {
-            // maxHeight: "300px",
-            // maxWidth: "339px",
-            // minHeight: "300px",
-            // minWidth: "327px",
-            // objectFit: "cover",
-          }
-        }
+        style={{
+          maxHeight: "300px",
+          maxWidth: "100%",
+          minHeight: "300px",
+          minWidth: "100%",
+          objectFit: "cover",
+        }}
       />
       <div className="card-body border">
         <h5 className="card-title">{props.cardTitle}</h5>
