@@ -7,13 +7,15 @@ function Card(props) {
         src={props.imgUrl}
         className="card-img-top"
         alt="..."
-        style={{
-          maxHeight: "300px",
-          maxWidth: "339px",
-          minHeight: "300px",
-          minWidth: "327px",
-          objectFit: "cover",
-        }}
+        style={
+          {
+            // maxHeight: "300px",
+            // maxWidth: "339px",
+            // minHeight: "300px",
+            // minWidth: "327px",
+            // objectFit: "cover",
+          }
+        }
       />
       <div className="card-body border">
         <h5 className="card-title">{props.cardTitle}</h5>
@@ -21,7 +23,7 @@ function Card(props) {
         <div className="border-top p-0 m-0 col-12">
           <a
             href={props.cardButtonUrl}
-            className="btn btn-primary d-flex justify-content-center col-6 mx-auto my-2 mt-3"
+            className="btn btn-primary d-flex my-auto col-6 mx-auto mt-3"
           >
             {props.cardButtonLabel}
           </a>
